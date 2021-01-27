@@ -1,0 +1,104 @@
+html {
+  height: 100px;
+  min-height: 100px;
+}
+
+body {
+  margin: 5px 15px;
+}
+
+#navbar {
+  display: grid;
+  grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
+  grid-template-rows: 50px;
+  grid-template-areas: "about store . gmail images menu profile";
+}
+
+#about {
+  grid-area: about;
+  justify-self: center;
+  align-self: center;
+}
+
+#store {
+  grid-area: store;
+  justify-self: center;
+  align-self: center;
+}
+
+#gmail {
+  grid-area: gmail;
+  justify-self: center;
+  align-self: center;
+}
+
+#images {
+  grid-area: images;
+  justify-self: center;
+  align-self: center;
+}
+
+#menu {
+  grid-area: menu;
+  justify-self: center;
+  align-self: center;
+}
+
+#menu-pic {
+  height: 24px;
+}
+
+#profile {
+  grid-area: profile;
+  justify-self: center;
+  align-self: center;
+}
+
+#profile-pic {
+  height: 30px;
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(77, 77, 77);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+#main {
+  padding-top: 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 150px 60px 60px;
+  grid-template-areas: 
+  ". logo ."
+  ". search-bar ."
+  ". flexbox ."
+
+}
+
+#logo {
+  grid-area: logo;
+  justify-self: center;
+  align-self: center;
+}
+
+#search-bar {
+  grid-area: search-bar;
+  margin: 10px;
+
+}
+
+#flexbox {
+  display: flexbox;
+  grid-area: flexbox;
+}
+
+#google-search-button {
+  grid-area: google-search-button;
+}
+
+#feeling-lucky {
+  grid-area: feeling-lucky;
+}
