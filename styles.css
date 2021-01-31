@@ -16,6 +16,11 @@ a {
   font-size: 13px;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
+
 /* NAV SECTOIN */
 
 #navbar {
@@ -93,11 +98,24 @@ a {
 
 #search-bar {
   grid-area: search-bar;
-  height: 35px;
+  height: 40px;
+  width: 100%;
   align-self: center;
-  border-radius: 20px;
+  border: 1px solid rgba(0,0,0,0.151);
+  border-radius: 25px;
   border-color: rgb(199, 199, 199);
 }
+
+#search-bar:hover {
+  box-shadow: 1px 1px 5px rgba(33,33,33,.2); 
+}
+
+#search-bar:focus {
+  box-shadow: 1px 1px 5px rgba(33,33,33,.2);
+  outline: none;
+}
+
+/* Remove the focus broder: "outline: none;" */
 
 #flexbox {
   display: flexbox;
@@ -108,7 +126,23 @@ a {
 }
 
 #google-search-button {
+  cursor: pointer;
   grid-area: google-search-button;
+  margin-right: 10px;
+  color: #3c4043;
+  width: 120px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color:rgb(245, 245, 245)
+  
+}
+
+#feeling-lucky {
+  cursor: pointer;
+  grid-area: feeling-lucky;
+  margin-left: 10px;
+  color: #3c4043;
   width: 120px;
   height: 30px;
   border: none;
@@ -116,14 +150,16 @@ a {
   background-color:rgb(245, 245, 245)
 }
 
-#feeling-lucky {
-  grid-area: feeling-lucky;
-  width: 120px;
-  height: 30px;
-  border: none;
-  border-radius: 5px;
-  background-color:rgb(245, 245, 245)
+#google-search-button:hover {
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+  border: 1px solid #dadce0;
+
 }
+#feeling-lucky:hover {
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+  border: 1px solid #dadce0;
+}
+
 
 
 
@@ -138,8 +174,9 @@ a {
   position: absolute;
   bottom: 0;
   width: 100%;
-
+  
 }
+
 
 #footer1 {
   grid-template-areas: footer1;
